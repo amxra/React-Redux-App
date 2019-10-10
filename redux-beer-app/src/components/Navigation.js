@@ -1,16 +1,17 @@
 import React from 'react';
 import '../scss/Navigation.scss'
+import {Link} from 'react-router-dom'
 
 
  function Navigation(){
      return(
          <header>
              <div className = 'title'>
-                <h2>Brewdog Beer Recipes</h2>
+                <Link to='/'><h2>Brewdog Beer Recipes</h2></Link>
              </div>
              <nav>
-                <p>Beers</p>
-                <p>FindBeer</p>
+                <Link to='/beers'><p>Beers</p></Link>
+                <Link to='/beer'><p>FindBeer</p></Link>
                 </nav>
          </header>
      )
