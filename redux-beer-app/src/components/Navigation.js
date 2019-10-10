@@ -4,11 +4,15 @@ import '../scss/Navigation.scss'
 
  function Navigation(){
      return(
-         <nav>
-             <h2>Brewdog Beer Recipes</h2>
-             <p>Beers</p>
-             <p>FindBeer</p>
-         </nav>
+         <header>
+             <div className = 'title'>
+                <h2>Brewdog Beer Recipes</h2>
+             </div>
+             <nav>
+                <p>Beers</p>
+                <p>FindBeer</p>
+                </nav>
+         </header>
      )
  }
 
