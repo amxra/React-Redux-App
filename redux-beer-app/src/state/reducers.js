@@ -4,7 +4,9 @@ import * as types from './actionTypes';
 
  export function beerReducer(state = initialBeers,action){
      switch(action.type){
-         default:
-             return state
+            case types.ADD_BEERS:
+                return action.payload
+            default:
+                 return state
      }
  }
